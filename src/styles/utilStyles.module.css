@@ -1,0 +1,61 @@
+.wrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: #fff;
+  box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.stripey {
+  background-image: 
+    linear-gradient(200deg, #fff, #fff 80%, transparent 80%, transparent 100%),
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      var(--yellow) 10px,
+      var(--yellow) 20px /* determines width of stripe */
+    );
+}
+
+.padded {
+  padding: 20px 20px 10px;
+  margin-bottom: 2.4rem;
+}
+
+.subtitle {
+  background: var(--salmon);
+  box-shadow: -4px 4px 0px 0px var(--orange);
+  padding: 10px 20px;
+  color: #fff;
+  display: inline-block;
+}
+.subtitle h2 {
+  color: inherit;
+}
+
+.projectList {
+  list-style: none;
+  padding: 0;
+}
+.projectList li:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+.projectList .padded {
+  margin-bottom: 0.5rem;
+}
+.projectList p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--teal);
+}
+.projectList a {
+  color: #fff;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.3s ease;
+}
+.projectList a:hover,
+.projectList a:focus {
+  text-decoration-color: #fff;
+}

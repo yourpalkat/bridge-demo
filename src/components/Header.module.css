@@ -1,0 +1,27 @@
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+}
+.mainNav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.mainNav li {
+  margin-inline-start: 30px;
+}
+.mainNav a {
+  font-family: var(--font-header);
+  font-weight: 800;
+  font-size: 1.4rem;
+  letter-spacing: 0.015rem;
+  color: var(--orange);
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.3s ease, color 0.3s ease;
+}
+.mainNav a:hover,
+.mainNav a:focus {
+  color: var(--salmon);
+  text-decoration-color: inherit;
+}
