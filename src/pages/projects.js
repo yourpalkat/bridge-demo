@@ -6,14 +6,14 @@ import utilStyles from '../styles/utilStyles.module.css';
 
 const Projects = () => {
   return (
-    <Layout>
+    <Layout pageTitle='All Projects'>
       <div className={utilStyles.wrapper}>
         <div className={`${utilStyles.stripey} ${utilStyles.padded}`}>
           <h1>Projects</h1>
         </div>
 
         <div className={utilStyles.padded}>
-          <p>Hey, check out these cool projects I worked on.</p>
+          <p>Hey, check out these cool bug sculptures I made! If you want me to make you one my commissions are open!</p>
           <ul className={utilStyles.projectList}>
             <li>
               <div className={`${utilStyles.stripey} ${utilStyles.padded}`}>

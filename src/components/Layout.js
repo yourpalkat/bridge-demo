@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from './Header';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, pageTitle }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -19,7 +19,11 @@ const Layout = ({ children }) => {
   return (
     <>
       <Helmet>
-        <title>{data.site.siteMetadata.title}</title>
+        {pageTitle ? (
+          <title>{`${data.site.siteMetadata.title} | ${pageTitle}`}</title>
+        ) : (
+          <title>{data.site.siteMetadata.title}</title>
+        )}
         <meta 
           name="description"
           content={data.site.siteMetadata.description} 

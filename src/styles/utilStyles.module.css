@@ -24,6 +24,16 @@
   margin-bottom: 2.4rem;
 }
 
+.twoColumn {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 2rem;
+}
+.twoColumn img {
+  display: block;
+  width: 100%;
+}
+
 .subtitle {
   background: var(--salmon);
   box-shadow: -4px 4px 0px 0px var(--orange);
